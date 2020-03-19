@@ -5,7 +5,7 @@
 ### Install
 
 ```bash
-go get github.com/sysatom/go-bloom-filter
+go get github.com/sysatom/go_bloom_filter
 ```
 
 ### Usage
@@ -15,11 +15,11 @@ package main
 
 import (
 	"fmt"
-	bloomFilter "github.com/sysatom/go-bloom-filter"
+	"github.com/sysatom/go_bloom_filter"
 )
 
 func main() {
-	bf := bloomFilter.NewBloomFilter(100000, 7)
+	bf := go_bloom_filter.NewBloomFilter(100000, 7)
 	for i := 0; i < 5000; i++ {
 		bf.Add(fmt.Sprintf("%d", i))
 	}

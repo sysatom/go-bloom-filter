@@ -1,4 +1,4 @@
-module github.com/sysatom/go-bloom-filter
+module github.com/sysatom/go_bloom_filter
 
 go 1.14
 
